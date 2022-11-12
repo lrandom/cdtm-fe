@@ -1,0 +1,14 @@
+/*rule*/
+div {
+    color: red;
+    background: green;
+    font-size: 40px;
+}
+
+div {
+    color: deeppink;
+}
+
+div{
+    color: green;
+}
