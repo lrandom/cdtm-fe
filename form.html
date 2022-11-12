@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="https://google.com.vn" method="post" enctype="multipart/form-data">
+    <label>
+        <span>Full Name</span>
+        <input type="text" name="full_name" value="Nguyễn Thành Luân" placeholder="Type Your FullName"></br>
+    </label>
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" placeholder="Type Your password"></br>
+
+    <input type="number" name="age" placeholder="Type Your Age"></br>
+    <input type="file" name="img"/>
+
+
+    <div>Chọn sở thích</div>
+    <span>Soccer</span><input type="checkbox" name="hobby" value="1"/><br>
+    <span>Gaming</span><input type="checkbox" name="hobby" value="2"/><br>
+
+
+    <div>Chọn Giới tính</div>
+    <input type="radio" name="gender" value="1">
+    <input type="radio" name="gender" value="2">
+
+    <div>Chọn quốc gia</div>
+    <select name="country">
+        <option value="1">Việt Nam</option>
+        <option value="2">Lào</option>
+        <option value="3">Thái Lan</option>
+        <option value="4">Campuchia</option>
+    </select>
+
+    <button>Submit</button>
+</form>
+</body>
+</html>
