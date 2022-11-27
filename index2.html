@@ -6,24 +6,23 @@
 </head>
 <body>
 <script>
-    let weather = "Trời nắng";
-    /*  if (weather == "Trời mưa") {
-        alert("Ở nhà ngủ");
-      }else{
-        alert("Đi chơi");
-      }*/
+    const arr = [10, 20, 12, 1, 3, 4, 5];
+    const arr2 = [10, "20", 12, 1, 3, 4, 5, 2.3];
+    console.log(arr[0]);//10
+    console.log(arr[1]);//20
+    console.log(arr[arr.length - 1]);
 
-    switch (weather) {
-        case "Trời mưa":
-            alert("Ở nhà ngủ");
-            break;
-        case "Trời nắng":
-            alert("Đi xem phem");
-            break;
-        case "Trời mát":
-            alert("Đi đá bóng");
-            break;
+    for (let i = 0; i < arr.length; i++) {
+        console.log(arr[i]);
     }
+
+    //callback function: hàm làm tham số của hàm khác
+    //higher order function: hàm bậc cao, hàm nhận hàm khác làm tham số
+    arr.forEach(function (item, index) {
+        console.log(item, index);
+    });
+
+
 </script>
 </body>
 </html>

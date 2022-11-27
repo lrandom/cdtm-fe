@@ -5,21 +5,21 @@
     <title>Title</title>
 </head>
 <body>
-<script>
-    let index = 10;
-    while (index < 20) {
-        console.log(index);
-        index += 1;
-    }
 
-    do {
-        console.log(index);
-        index += 1;
-    } while (index < 20);
-
-    for (let i = 0; i < 10; i++) {
-        console.log(i);
-    }
-</script>
 </body>
+
+<script>
+   function total(a,b,func){
+     let sum = a+b;
+     func(sum);
+   }
+
+   total(10,20,function (sum){
+     alert(sum);
+   })
+
+   total(10,20,function (sum){
+     alert(sum*2);
+   })
+</script>
 </html>

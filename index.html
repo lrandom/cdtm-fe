@@ -5,25 +5,32 @@
     <title>Title</title>
 </head>
 <body>
-<p>
-</p>
-
-<script type="text/javascript" src="main.js">
-
-</script>
-
 <script>
-    var myName = "Nguyễn Thanh Luân";//toàn cục, hàm
+    function total(a, b) {
+        let sum = a + b;
+        alert(sum);
+    }
 
-    //2017 ES6 ->block scope; phạm vi khối
-    let myAge = "30";
-    const myAddress = "Hạ Long, Quảng Ninh"; //định nghĩ hằng
+    total(2,10);
 
-    //camelCase
-    //PascalCase
-    //under_score
+    total(20,10);
 
+    //first citizen function-> sử dụng hàm như một tham số, giá trị của biến
+    //hàm nặc danh
+    const total2 = function (a, b){
+        let sum = a + b;
+        alert(sum);
+    }
 
+    //hàm mũi tên
+    //javascript 2017 - es6
+    const total3 = (a, b) => {
+        let sum = a + b;
+        alert(sum);
+    }
+
+    //sử dụng cú pháp new
+    const total4 = new Function('a', 'b', 'let sum = a + b; alert(sum);');
 </script>
 </body>
 </html>
