@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="wrapper"></div>
+<button onclick="doAppendChild()">Append Child</button>
+<script>
+    function doAppendChild() {
+        const arr = [
+            "This is paragraph 1",
+            "This is paragraph 2",
+            "This is paragraph 3",
+            "This is paragraph 4",
+            "This is paragraph 5"
+        ]
+        const divNode = document.querySelector('#wrapper');
+        for (let i = 0; i < arr.length; i++) {
+            //tạo ra một nút/object/element
+            const pNode = document.createElement('p');
+            //thêm nội dung vào nút
+            pNode.innerHTML = arr[i];
+            //thêm nút vào trong div
+            divNode.appendChild(pNode);
+        }
+    }
+</script>
+</body>
+</html>

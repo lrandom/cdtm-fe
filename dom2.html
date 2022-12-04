@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="panel">
+    <div class="panel-title" onclick="togglePanelContent()">Title</div>
+    <div class="panel-content">
+        Danistas ire!
+        Danistas ire!
+        Danistas ire!
+        Danistas ire!
+        Danistas ire!
+        Danistas ire!
+    </div>
+</div>
+<script>
+    function togglePanelContent() {
+        const panelContent = document.querySelector('.panel-content');
+        panelContent.classList.toggle('hidden');
+    }
+</script>
+<style>
+    .panel {
+        border: 1px solid #cdcdcd;
+        padding: 2px;
+        width: 500px;
+        margin: 0px auto;
+    }
+
+    .panel-title {
+        text-align: center;
+        background: #cdcdcd;
+    }
+
+    .hidden {
+        display: none;
+    }
+</style>
+</body>
+</html>

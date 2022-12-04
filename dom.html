@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<button onclick="changeText()">Change Text</button>
+
+<script>
+    function changeText() {
+        //const divNode = document.querySelector('div');
+        //divNode.innerText = "Hello World";
+        const divNodes = document.querySelectorAll('div');
+      for (let i = 0; i < divNodes.length; i++) {
+        divNodes[i].innerText = "Hello World";
+      }
+    }
+</script>
+</body>
+</html>
